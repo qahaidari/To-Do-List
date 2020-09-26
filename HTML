@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  
+  <body>
+    <div id="myHeader">
+      <h2>My To Do List</h2>
+      <input id="inputTask" type="text" placeholder="Task...">
+      <i id="addButn" onclick="addTask()" class="fa fa-check"></i>
+    </div>
+    
+    <div>
+      <h3>TODO</h3>
+      <ul id="incomplete">
+        <li> <input type="checkBox" class="checkBox" onchange="checking(this, this.parentElement.parentElement)"> <label>See Doctor</label>
+        <input type="text" class="savedMode"> <i class="fa fa-close"></i> <i class="fa fa-edit" onclick="EditTask(this)"></i>
+        </li>
+        <li><input type="checkBox" class="checkBox" onchange="checking(this, this.parentElement.parentElement)"> <label>Meeting</label>
+          <input type="text" class="savedMode"> <i class="fa fa-close"></i> <i class="fa fa-edit" onclick="EditTask(this)"></i>
+        </li>
+        <li>
+          <input type="checkBox" class="checkBox" onchange="checking(this, this.parentElement.parentElement)"> <label>Football</label>
+          <input type="text" class="savedMode"> <i class="fa fa-close"></i> <i class="fa fa-edit" onclick="EditTask(this)"></i>
+        </li>
+      </ul>
+    </div>
+    
+    <h3>COMPLETED</h3>
+    
+    <ul id="completed">
+      <li>
+        <input type="checkBox" class="checkBox" onchange="checking(this, this.parentElement.parentElement)" checked> <label>Lunch</label>
+          <input type="text" class="savedMode"> <i class="fa fa-close"></i> <i class="fa fa-edit" onclick="EditTask(this)"></i>
+      </li>
+    </ul>
+
+  </body>
+  
+</html>
