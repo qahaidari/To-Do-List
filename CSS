@@ -1,0 +1,67 @@
+body {
+  font-family: sans-serif;
+  width: 400px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#myHeader {
+  text-align: center;
+  background-color: #fff;
+  padding: 10px 20px;
+}
+
+#inputTask {
+  border-radius: 5px;
+  border-width: 2px;
+}
+
+#addButn:hover {
+  color: green;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+  padding: 12px 8px 12px 40px;
+  background-color: #fff;
+  font-size: 20px;
+}
+
+ul li:nth-child(odd) {
+  background-color: #bbb;
+}
+
+ul li:hover {
+  background-color: lightblue;
+}
+
+.fa-close, .fa-edit, .fa-save {
+  float: right;
+}
+
+.fa-close:hover {
+  color: red;
+}
+
+.fa-edit:hover {
+  color: blue;
+}
+
+.fa-save:hover {
+  color: blue;
+}
+
+.editMode, .savedMode {
+  display: none;
+}
+
+h3 {
+  border-style : none none solid none;  
+}
