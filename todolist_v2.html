@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  
+  <body>
+    
+    <form id="myHeader">
+      <h1>My To Do List</h1>
+      <label for="inputTask">Task</label>
+      <input id="inputTask" type="text" placeholder="Take out trash" />
+      <button class="add" onclick="addTask(event)" aria-label="Add task">
+        <span class="fa fa-check"></span>
+      </button>
+    </form>
+    
+    <div>
+      <h2>TODO</h2>
+      <ul id="incomplete">
+        <li> <input type="checkBox" class="checkBox" onchange="toggleTaskComplete(this, this.parentElement.parentElement)"> <label>See Doctor</label>
+        <input type="text" class="toggleDisplay"> <button class="remove" aria-label="Remove task"><span class="fa fa-close"></span></button> <button class="edit" data-mode="edit" onclick="editTask(this)" aria-label="Edit task"><span class="fa fa-edit"></span></button>
+        </li>
+        <li><input type="checkBox" class="checkBox" onchange="toggleTaskComplete(this, this.parentElement.parentElement)"> <label>Meeting</label>
+          <input type="text" class="toggleDisplay"> <button class="remove" aria-label="Remove task"><span class="fa fa-close"></span></button> <button class="edit" data-mode="edit" onclick="editTask(this)" aria-label="Edit task"><span class="fa fa-edit"></span></button>
+        </li>
+        <li>
+          <input type="checkBox" class="checkBox" onchange="toggleTaskComplete(this, this.parentElement.parentElement)"> <label>Football</label>
+          <input type="text" class="toggleDisplay"> <button class="remove" aria-label="Remove task">
+<span class="fa fa-close"></span></button> <button class="edit" data-mode="edit" onclick="editTask(this)" aria-label="Edit task"><span class="fa fa-edit"></span></button>
+        </li>
+      </ul>
+    </div>
+    
+    <h2>COMPLETED</h2>
+    
+    <ul id="completed">
+      <li>
+        <input type="checkBox" class="checkBox" onchange="toggleTaskComplete(this, this.parentElement.parentElement)" checked> <label>Lunch</label>
+          <input type="text" class="toggleDisplay"> <button class="remove" aria-label="Remove task"><span class="fa fa-close"></span></button> <button class="edit" data-mode="edit" onclick="editTask(this)" aria-label="Edit task"><span class="fa fa-edit"></span></button>
+      </li>
+    </ul>
+
+  </body>
+  
+</html>
