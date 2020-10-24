@@ -10,4 +10,7 @@ https://cdpn.io/qahaidari/debug/jOqxmxM/wQAPoznaJQWr
 
 # Version 2:
 
+https://codepen.io/qahaidari/pen/qBZvqMv
+
+https://cdpn.io/qahaidari/debug/qBZvqMv/PNAvYKoLNVVr
 
