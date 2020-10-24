@@ -1,0 +1,67 @@
+body {
+  font-family: sans-serif;
+  width: 400px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#myHeader {
+  text-align: center;
+  background-color: #fff;
+  padding: 10px 20px;
+}
+
+#inputTask {
+  border-radius: 5px;
+  border-width: 2px;
+}
+
+.add:hover {
+  color: green;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+  padding: 12px 8px 12px 40px;
+  background-color: #fff;
+  font-size: 20px;
+}
+
+ul li:nth-child(odd) {
+  background-color: #bbb;
+}
+
+ul li:hover {
+  background-color: lightblue;
+}
+
+.remove, .edit, .save {
+  float: right;
+}
+
+.remove:hover {
+  color: red;
+}
+
+.edit:hover {
+  color: blue;
+}
+
+.save:hover {
+  color: blue;
+}
+
+.toggleDisplay {
+  display: none;
+}
+
+h3 {
+  border-style : none none solid none;  
+}
